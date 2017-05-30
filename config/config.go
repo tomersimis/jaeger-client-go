@@ -39,10 +39,11 @@ const defaultSamplingProbability = 0.001
 
 // Configuration configures and creates Jaeger Tracer
 type Configuration struct {
-	Disabled   bool            `yaml:"disabled"`
-	Sampler    *SamplerConfig  `yaml:"sampler"`
-	Reporter   *ReporterConfig `yaml:"reporter"`
-	RPCMetrics bool            `yaml:"rpc_metrics"`
+	Disabled            bool            `yaml:"disabled"`
+	Sampler             *SamplerConfig  `yaml:"sampler"`
+	Reporter            *ReporterConfig `yaml:"reporter"`
+	RPCMetrics          bool            `yaml:"rpc_metrics"`
+	BaggageRestrictions bool            `yaml:"baggage_restrictions"`
 }
 
 // SamplerConfig allows initializing a non-default sampler.  All fields are optional.
@@ -143,9 +144,21 @@ func (c Configuration) New(
 		reporter = r
 	}
 
+	var baggageRestrictionManager jaeger.BaggageRestrictionManager
+	if c.BaggageRestrictions {
+		baggageRestrictionManager = jaeger.NewBaggageRestrictionManager(
+			serviceName,
+			jaeger.BaggageRestrictionManagerOptions.Metrics(tracerMetrics),
+			jaeger.BaggageRestrictionManagerOptions.Logger(opts.logger),
+		)
+	} else {
+		baggageRestrictionManager = jaeger.DefaultBaggageRestrictionManager{}
+	}
+
 	tracerOptions := []jaeger.TracerOption{
 		jaeger.TracerOptions.Metrics(tracerMetrics),
 		jaeger.TracerOptions.Logger(opts.logger),
+		jaeger.TracerOptions.BaggageRestrictionManager(baggageRestrictionManager),
 	}
 
 	for _, obs := range opts.observers {

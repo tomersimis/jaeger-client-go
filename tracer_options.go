@@ -98,3 +98,9 @@ func (tracerOptions) Observer(observer Observer) TracerOption {
 		tracer.observer.append(observer)
 	}
 }
+
+func (tracerOptions) BaggageRestrictionManager(manager BaggageRestrictionManager) TracerOption {
+	return func(tracer *tracer) {
+		tracer.baggageRestrictionManager = manager
+	}
+}
