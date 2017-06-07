@@ -31,8 +31,8 @@ import (
 	"github.com/opentracing/opentracing-go/log"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/uber/jaeger-client-go/thrift-gen/zipkincore"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/tomersimis/jaeger-client-go/thrift-gen/zipkincore"
+	"github.com/tomersimis/jaeger-client-go/utils"
 )
 
 func TestThriftFirstInProcessSpan(t *testing.T) {

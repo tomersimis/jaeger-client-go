@@ -1,4 +1,4 @@
-// Copyright (c) 2016 Uber Technologies, Inc.
+s// Copyright (c) 2016 Uber Technologies, Inc.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@ package testutils
 import (
 	"sync"
 
-	"github.com/uber/jaeger-client-go/thrift-gen/sampling"
+	"github.com/tomersimis/jaeger-client-go/thrift-gen/sampling"
 )
 
 func newSamplingManager() *samplingManager {

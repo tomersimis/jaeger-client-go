@@ -27,7 +27,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/uber/jaeger-lib/metrics"
 
-	"github.com/uber/jaeger-client-go"
+	"github.com/tomersimis/jaeger-client-go"
 )
 
 func TestApplyOptions(t *testing.T) {

@@ -27,9 +27,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/thrift-gen/sampling"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/tomersimis/jaeger-client-go/log"
+	"github.com/tomersimis/jaeger-client-go/thrift-gen/sampling"
+	"github.com/tomersimis/jaeger-client-go/utils"
 )
 
 const (

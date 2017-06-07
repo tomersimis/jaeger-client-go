@@ -23,7 +23,7 @@ package config
 import (
 	"github.com/uber/jaeger-lib/metrics"
 
-	"github.com/uber/jaeger-client-go"
+	"github.com/tomersimis/jaeger-client-go"
 )
 
 // Option is a function that sets some option on the client.

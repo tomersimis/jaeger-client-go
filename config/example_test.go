@@ -25,9 +25,9 @@ import (
 
 	"github.com/uber/jaeger-lib/metrics"
 
-	"github.com/uber/jaeger-client-go"
-	jaegercfg "github.com/uber/jaeger-client-go/config"
-	jaegerlog "github.com/uber/jaeger-client-go/log"
+	"github.com/tomersimis/jaeger-client-go"
+	jaegercfg "github.com/tomersimis/jaeger-client-go/config"
+	jaegerlog "github.com/tomersimis/jaeger-client-go/log"
 )
 
 func ExampleConfiguration_InitGlobalTracer_testing() {

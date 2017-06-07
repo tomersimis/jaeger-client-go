@@ -27,10 +27,10 @@ import (
 	"github.com/opentracing/opentracing-go/ext"
 	"golang.org/x/net/context"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/crossdock/common"
-	"github.com/uber/jaeger-client-go/crossdock/log"
-	"github.com/uber/jaeger-client-go/crossdock/thrift/tracetest"
+	"github.com/tomersimis/jaeger-client-go"
+	"github.com/tomersimis/jaeger-client-go/crossdock/common"
+	"github.com/tomersimis/jaeger-client-go/crossdock/log"
+	"github.com/tomersimis/jaeger-client-go/crossdock/thrift/tracetest"
 )
 
 func (s *Server) doStartTrace(req *tracetest.StartTraceRequest) (*tracetest.TraceResponse, error) {

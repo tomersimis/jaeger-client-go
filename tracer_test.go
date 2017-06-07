@@ -32,8 +32,8 @@ import (
 	"github.com/uber/jaeger-lib/metrics"
 	"github.com/uber/jaeger-lib/metrics/testutils"
 
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/tomersimis/jaeger-client-go/log"
+	"github.com/tomersimis/jaeger-client-go/utils"
 )
 
 type tracerSuite struct {

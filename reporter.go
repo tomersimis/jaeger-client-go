@@ -27,7 +27,7 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"github.com/uber/jaeger-client-go/log"
+	"github.com/tomersimis/jaeger-client-go/log"
 )
 
 // Reporter is called by the tracer when a span is completed to report the span to the tracing collector.

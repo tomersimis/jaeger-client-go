@@ -29,8 +29,8 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"github.com/uber/jaeger-client-go"
-	"github.com/uber/jaeger-client-go/rpcmetrics"
+	"github.com/tomersimis/jaeger-client-go"
+	"github.com/tomersimis/jaeger-client-go/rpcmetrics"
 )
 
 const defaultSamplingProbability = 0.001

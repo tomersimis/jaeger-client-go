@@ -31,8 +31,8 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 
-	"github.com/uber/jaeger-client-go/log"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/tomersimis/jaeger-client-go/log"
+	"github.com/tomersimis/jaeger-client-go/utils"
 )
 
 type tracer struct {

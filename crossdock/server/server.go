@@ -31,13 +31,12 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/uber/tchannel-go"
 	"golang.org/x/net/context"
 
-	"github.com/uber/jaeger-client-go/crossdock/common"
-	"github.com/uber/jaeger-client-go/crossdock/endtoend"
-	"github.com/uber/jaeger-client-go/crossdock/log"
-	"github.com/uber/jaeger-client-go/crossdock/thrift/tracetest"
+	"github.com/tomersimis/jaeger-client-go/crossdock/common"
+	"github.com/tomersimis/jaeger-client-go/crossdock/endtoend"
+	"github.com/tomersimis/jaeger-client-go/crossdock/log"
+	"github.com/tomersimis/jaeger-client-go/crossdock/thrift/tracetest"
 )
 
 // Server implements S1-S3 servers

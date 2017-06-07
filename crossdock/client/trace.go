@@ -27,10 +27,10 @@ import (
 	"github.com/crossdock/crossdock-go"
 	"golang.org/x/net/context"
 
-	"github.com/uber/jaeger-client-go/crossdock/common"
-	"github.com/uber/jaeger-client-go/crossdock/log"
-	"github.com/uber/jaeger-client-go/crossdock/thrift/tracetest"
-	"github.com/uber/jaeger-client-go/utils"
+	"github.com/tomersimis/jaeger-client-go/crossdock/common"
+	"github.com/tomersimis/jaeger-client-go/crossdock/log"
+	"github.com/tomersimis/jaeger-client-go/crossdock/thrift/tracetest"
+	"github.com/tomersimis/jaeger-client-go/utils"
 )
 
 func (c *Client) trace(t crossdock.T) {

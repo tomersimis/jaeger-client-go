@@ -9,7 +9,7 @@ for use with other Zipkin collectors.
 
 // ...
 import (
-  "github.com/uber/jaeger-client-go/zipkin"
+  "github.com/tomersimis/jaeger-client-go/zipkin"
 )
 
 func main() {
