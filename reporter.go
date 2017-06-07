@@ -163,10 +163,10 @@ const (
 )
 
 type remoteReporter struct {
+	queueLength int64 // signed because metric's gauge is signed
 	reporterOptions
 	sender       Transport
 	queue        chan *Span
-	queueLength  int64 // signed because metric's gauge is signed
 	queueDrained sync.WaitGroup
 	flushSignal  chan *sync.WaitGroup
 }
